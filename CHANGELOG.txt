@@ -18,3 +18,15 @@ Change Log
 0.0.4 (27/03/2025)
 -------------------
 - Fixed real time full analysis file
+
+0.0.5 (27/03/2025)
+-------------------
+- Added mel-frequency spectogram generation
+
+0.0.6 (27/03/2025)
+-------------------
+- seaborn included. README.txt updated
+
+0.0.7 (27/03/2025)
+-------------------
+- mel-frequency spectogram issue resolved. README.md is created

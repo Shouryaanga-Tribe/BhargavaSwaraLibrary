@@ -1,37 +1,3 @@
-Metadata-Version: 2.4
-Name: bhargava_swara
-Version: 0.0.7
-Summary: A library for analysis and synthesis of Indian classical music
-Home-page: 
-Author: Kuchi Chaitanya Krishna Deepak
-Author-email: kckdeepak29@gmail.com
-License: MIT
-Keywords: music,analysis,synthesis,carnatic,hindustani,indian classical music,raga,tala,spectograms,signal
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Education
-Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Operating System :: OS Independent
-Requires-Python: >=3.6
-Description-Content-Type: text/markdown
-License-File: LICENSE.txt
-Requires-Dist: google-generativeai>=0.1.0
-Requires-Dist: librosa>=0.10.0
-Requires-Dist: matplotlib>=3.7.0
-Requires-Dist: numpy>=1.24.0
-Requires-Dist: seaborn>=0.11.0
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
-Dynamic: keywords
-Dynamic: license
-Dynamic: license-file
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
-
 # Bhargava Swara
 
 A Python library for analyzing and visualizing Indian classical music, including raga, tala, tempo, tradition, ornaments, full analysis, and mel-frequency spectrograms.
@@ -124,36 +90,3 @@ Contributions are welcome! Please submit a pull request or open an issue on the 
 
 This library is licensed under the MIT License. See the `LICENSE` file for details.
 ```
-
-Change Log
-==========
-
-0.0.1 (26/03/2025)
--------------------
-- First Release
-
-===========
-
-0.0.2 (27/03/2025)
--------------------
-- Fixed missing module files in package
-
-0.0.3 (27/03/2025)
--------------------
-- Fixed ornaments detection file
-
-0.0.4 (27/03/2025)
--------------------
-- Fixed real time full analysis file
-
-0.0.5 (27/03/2025)
--------------------
-- Added mel-frequency spectogram generation
-
-0.0.6 (27/03/2025)
--------------------
-- seaborn included. README.txt updated
-
-0.0.7 (27/03/2025)
--------------------
-- mel-frequency spectogram issue resolved. README.md is created

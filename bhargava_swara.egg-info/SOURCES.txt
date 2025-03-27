@@ -1,10 +1,11 @@
 CHANGELOG.txt
 LICENSE.txt
 MANIFEST.in
-README.txt
+README.md
 setup.py
 bhargava_swara/__init__.py
 bhargava_swara/carnatic_or_hindustani.py
+bhargava_swara/mel_spectrogram.py
 bhargava_swara/ornament_detection.py
 bhargava_swara/raga_recognition.py
 bhargava_swara/real_time_full_analysis.py
