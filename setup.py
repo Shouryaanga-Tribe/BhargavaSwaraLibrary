@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="bhargava_swara",
-    version="0.0.7",
+    version="0.0.9",
     author="Kuchi Chaitanya Krishna Deepak",
     author_email="kckdeepak29@gmail.com",
     description="A library for analysis and synthesis of Indian classical music",

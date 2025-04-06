@@ -5,6 +5,9 @@ README.md
 setup.py
 bhargava_swara/__init__.py
 bhargava_swara/carnatic_or_hindustani.py
+bhargava_swara/cent_spectogram.py
+bhargava_swara/chroma_spectogram.py
+bhargava_swara/cqt_spectogram.py
 bhargava_swara/mel_spectrogram.py
 bhargava_swara/ornament_detection.py
 bhargava_swara/raga_recognition.py
