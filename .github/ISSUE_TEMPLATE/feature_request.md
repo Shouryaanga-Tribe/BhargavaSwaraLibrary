@@ -24,6 +24,8 @@ Provide an example of how you'd use this feature (e.g., code snippet, workflow):
 from bhargava_swara import new_feature
 result = new_feature("audio.wav", param1="value")
 print(result)
+```
+---
 
 ## Checklist
 - [ ] My code follows the project's style guidelines (PEP 8).
@@ -34,7 +36,6 @@ print(result)
 
 ## Additional Notes
 Add any extra information for reviewers here (e.g., challenges faced, trade-offs made).
-```
 
 ---
 
