@@ -4,6 +4,7 @@ about: Report a bug or issue with Bhargava Swara
 title: "[BUG] "
 labels: bug
 assignees: ''
+
 ---
 
 ## Bug Report
