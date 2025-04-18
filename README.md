@@ -43,43 +43,10 @@ generate_mel_spectrogram(audio, output, n_mels=128, fmax=8000)
 print("Mel spectrogram generated successfully!")
 ```
 
-### Chroma Spectrogram
-```python
-from bhargava_swara import generate_chroma_spectrogram
-
-audio = "path/to/audio.wav"
-output = "path/to/output_chroma_spectrogram.png"
-generate_chroma_spectrogram(audio, output, n_chroma=12, hop_length=512)
-print("Chroma spectrogram generated successfully!")
-```
-
-### CQT Spectrogram
-```python
-from bhargava_swara import generate_cqt_spectrogram
-
-audio = "path/to/audio.wav"
-output = "path/to/output_cqt_spectrogram.png"
-generate_cqt_spectrogram(audio, output, hop_length=512, n_bins=84)
-print("CQT spectrogram generated successfully!")
-```
-
-### Cent Filterbank Spectrogram
-```python
-from bhargava_swara import generate_cent_spectrogram
-
-audio = "path/to/audio.wav"
-output = "path/to/output_cent_spectrogram.png"
-generate_cent_spectrogram(audio, output, n_filters=128, fmax=8000)
-print("Cent filterbank spectrogram generated successfully!")
-```
-
 #### Spectrogram Parameters:
 - `audio`: Path to the input audio file (e.g., WAV or MP3)
 - `output`: Path to save the PNG file
 - Mel-specific: `n_mels` (default: 128), `fmax` (default: 8000)
-- Chroma-specific: `n_chroma` (default: 12), `hop_length` (default: 512)
-- CQT-specific: `hop_length` (default: 512), `n_bins` (default: 84)
-- Cent-specific: `n_filters` (default: 128), `fmax` (default: 8000)
 
 ## Music Analysis
 
@@ -145,8 +112,50 @@ result = analyze_music_full(audio, api_key)
 print(f"Full Analysis:\n{result}")
 ```
 
+## Music Synthesis
+
+Create Indian classical music elements with ease.
+
+### Tanpura Drone
+Generate a tanpura drone for practice or ambiance.
+
+```python
+from bhargava_swara import generate_tanpura_drone
+
+# Play in real-time
+generate_tanpura_drone(pitch=261.63, duration=10)
+
+# Save to WAV
+generate_tanpura_drone(pitch=261.63, duration=10, output_path="tanpura_drone.wav")
+```
+
+#### Parameters:
+- `pitch`: Fundamental frequency of Sa (e.g., 261.63 Hz for C4)
+- `duration`: Length of the drone in seconds
+- `output_path`: Path to save WAV file (optional; if None, plays in real-time)
+
+## Future Development
+
+We plan to enhance Bhargava Swara with the following features:
+
+### Spectrogram Enhancements
+- **Chroma Spectrogram**: Add support for visualizing pitch class distributions over time.
+- **CQT Spectrogram**: Implement constant-Q transform spectrograms for better frequency resolution.
+- **Cent Filterbank Spectrogram**: Generate spectrograms using cent-scaled filterbanks for microtonal analysis.
+
+### Analysis Features
+- **Automatic Raga Recognition**: Develop algorithms to identify ragas automatically from audio input.
+- **Tonic Identification**: Detect the tonic (base pitch) of a performance for accurate analysis.
+- **Pitch Extraction**: Extract pitch contours from audio to analyze melodic structure.
+- **Rhythm Analysis**: Analyze meter, rhythmic patterns, and structure in talas.
+
+### Synthesis Tools
+- **Tala Generation**: Create rhythmic cycles (talas) programmatically for practice or composition.
+- **Generate Music Based on Raga**: Synthesize music adhering to a specific raga's rules.
+- **Music Imitation**: Generate music imitating the style of a given audio input.
+
+Contributions and suggestions for these features are welcome! Please submit ideas or pull requests to the [GitHub repository](https://github.com/your-repo/bhargava_swara).
 
 ## License
 
 This library is licensed under the MIT License. See the `LICENSE` file for details.
-```

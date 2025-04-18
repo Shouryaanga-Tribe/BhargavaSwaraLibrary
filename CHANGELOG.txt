@@ -34,3 +34,15 @@ Change Log
 0.0.8 (06/04/2025)
 -------------------
 - 3 more spectogram generations added. README.md file updated
+
+0.0.9 (06/04/2025)
+-------------------
+- fixed bugs
+
+0.0.10 to 0.0.12 (18/04/2025)
+-------------------
+- added tanpura droid generation
+
+0.0.13 (18/04/2025)
+-------------------
+- removed spectograms
