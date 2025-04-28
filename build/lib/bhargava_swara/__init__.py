@@ -5,7 +5,9 @@ from .carnatic_or_hindustani import analyze_tradition
 from .ornament_detection import analyze_ornaments
 from .real_time_full_analysis import analyze_music_full
 from .mel_spectrogram import generate_mel_spectrogram
-from .tanpura_drone_generator import generate_tanpura_drone
+
+from .analyzer import AudioAnalyzer
+from .synthesis_system import InstrumentSynthesizer
 
 __all__ = [
     "analyze_raga",
@@ -15,5 +17,6 @@ __all__ = [
     "analyze_ornaments",
     "analyze_music_full",
     "generate_mel_spectrogram",
-    "generate_tanpura_drone",
+    "AudioAnalyzer",
+    "InstrumentSynthesizer",
 ]

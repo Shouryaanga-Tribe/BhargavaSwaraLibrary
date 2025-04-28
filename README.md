@@ -116,23 +116,45 @@ print(f"Full Analysis:\n{result}")
 
 Create Indian classical music elements with ease.
 
-### Tanpura Drone
-Generate a tanpura drone for practice or ambiance.
+### New Synthesis Capabilities
+In this release, we’ve added advanced synthesis capabilities to generate music based on analyzed audio input. Users can now synthesize melodies, rhythms, and drones using traditional Indian instruments.
 
+#### Usage Example
 ```python
-from bhargava_swara import generate_tanpura_drone
+from bhargava_swara import AudioAnalyzer, InstrumentSynthesizer
 
-# Play in real-time
-generate_tanpura_drone(pitch=261.63, duration=10)
+# Analyze an audio file
+analyzer = AudioAnalyzer()
+analysis = analyzer.analyze_song("input.wav")
 
-# Save to WAV
-generate_tanpura_drone(pitch=261.63, duration=10, output_path="tanpura_drone.wav")
+# Synthesize using sitar, tabla, and tanpura
+synthesizer = InstrumentSynthesizer()
+melody = synthesizer.synthesize_melody(analysis["melody"], instrument_name="sitar")
+tabla = synthesizer.generate_tabla_rhythm(analysis["rhythm"])
+tanpura = synthesizer.generate_tanpura(analysis["raga"], duration=2.0)
+mixed = synthesizer.mix_outputs(melody, tabla, tanpura, output_path="output.wav")
+print("Synthesis completed! Output saved to output.wav")
 ```
 
-#### Parameters:
-- `pitch`: Fundamental frequency of Sa (e.g., 261.63 Hz for C4)
-- `duration`: Length of the drone in seconds
-- `output_path`: Path to save WAV file (optional; if None, plays in real-time)
+##### Parameters:
+- `instrument_name`: Choose from "sitar", "veena", or "flute" for melody synthesis.
+- `output_path`: Path to save the synthesized audio file (optional).
+- `duration`: Duration of the tanpura drone in seconds (default: 2.0).
+
+#### Command-Line Example
+An example script (`main.py`) is provided in the repository for quick testing:
+```bash
+git clone https://github.com/yourusername/bhargava_swara.git
+cd bhargava_swara
+python main.py input.wav output.wav --instrument sitar --debug
+```
+- `--instrument`: Specify the instrument (default: "sitar").
+- `--debug`: Save intermediate files for debugging (e.g., melody, tabla, tanpura).
+- 
+  **Note**: Ensure `ffmpeg` is installed for audio processing. On macOS/Linux:
+  - `brew install ffmpeg` (macOS)
+  - `sudo apt-get install ffmpeg` (Ubuntu)
+  On Windows, download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH.
 
 ## Future Development
 
@@ -154,8 +176,10 @@ We plan to enhance Bhargava Swara with the following features:
 - **Generate Music Based on Raga**: Synthesize music adhering to a specific raga's rules.
 - **Music Imitation**: Generate music imitating the style of a given audio input.
 
-Contributions and suggestions for these features are welcome! Please submit ideas or pull requests to the [GitHub repository](https://github.com/your-repo/bhargava_swara).
+Contributions and suggestions for these features are welcome! Please submit ideas or pull requests to the [GitHub repository](https://github.com/Shouryaanga-Tribe/BhargavaSwaraLibrary).
 
 ## License
 
 This library is licensed under the MIT License. See the `LICENSE` file for details.
+
+

@@ -46,3 +46,7 @@ Change Log
 0.0.13 (18/04/2025)
 -------------------
 - removed spectograms
+
+0.0.15 (28/04/2025)
+-------------------
+- Added music synthesis
